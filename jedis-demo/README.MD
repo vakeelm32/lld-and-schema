@@ -1,4 +1,5 @@
-# 1. curl --location 'http://localhost:8080/sortedData/all' 
+# 1. List API
+curl --location 'http://localhost:8080/sortedData/all' 
 
 Response - 
 
@@ -32,7 +33,8 @@ Response -
 
 To obtain comprehensive data: Determine the enrollment figures for each month, organized according to the corresponding scores.
 
-# 2. curl --location 'http://localhost:8080/postData' \
+# 2. Upload Data
+curl --location 'http://localhost:8080/postData' \
 --header 'Content-Type: application/json' \
 --data '{
     "month":"august",
@@ -42,14 +44,14 @@ To obtain comprehensive data: Determine the enrollment figures for each month, o
 
 Add enrollment data for each month.
 
-# 3. curl --location 'http://localhost:8080/sortedData/january'
+# 3. Get Data By Month
+curl --location 'http://localhost:8080/sortedData/january'
 Get Data for supplied month
 
 
 
-Configure Redis - https://app.redislabs.com/ provision from here, its free for dev
+Provision and Configure Redis - https://app.redislabs.com/ from here, its free for dev
 Copy credentials from https://app.redislabs.com/#/subscriptions/subscription/<yourid>/bdb-view/12004108/configuration and add to your config file.
-
 
 Sorted Map logic in - io.redis.jedis.jedisdemo.controllers.SortedSetController
 
