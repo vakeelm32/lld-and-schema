@@ -1,4 +1,4 @@
-1. curl --location 'http://localhost:8080/sortedData/all' 
+# 1. curl --location 'http://localhost:8080/sortedData/all' 
 
 Response - 
 
@@ -32,7 +32,7 @@ Response -
 
 To obtain comprehensive data: Determine the enrollment figures for each month, organized according to the corresponding scores.
 
-2. curl --location 'http://localhost:8080/postData' \
+# 2. curl --location 'http://localhost:8080/postData' \
 --header 'Content-Type: application/json' \
 --data '{
     "month":"august",
@@ -42,7 +42,7 @@ To obtain comprehensive data: Determine the enrollment figures for each month, o
 
 Add enrollment data for each month.
 
-3. curl --location 'http://localhost:8080/sortedData/january'
+# 3. curl --location 'http://localhost:8080/sortedData/january'
 Get Data for supplied month
 
 
@@ -54,16 +54,11 @@ Copy credentials from https://app.redislabs.com/#/subscriptions/subscription/<yo
 Sorted Map logic in - io.redis.jedis.jedisdemo.controllers.SortedSetController
 
 ---------------------------------------------------------------------------------
-Some Important Links for Redis -
+# Some Important Links for Redis -
 
 https://www.youtube.com/watch?v=h30k7YixrMo
 https://www.youtube.com/watch?v=5TRFpFBccQM
 https://singhneeruk.medium.com/how-redis-internally-works-in-progress-e2aea2841427
 https://medium.com/@rrakshith007/io-multiplexing-and-its-advantages-8c75584079d1#:~:text=IO%20Multiplexing%20is%20a%20way,involve%20processing%20by%20the%20CPU.
 EvenLoopp - https://udemy.com/course/nodejs-express-mongodb-bootcamp/learn/lecture/15064746#overview
-
-
-
-
-
 
