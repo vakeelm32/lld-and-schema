@@ -4,6 +4,6 @@
    
 2. [Connection-pooling](https://github.com/vakeelm32/hld-implementations/tree/master/connection-pooling)
 
-3. https://github.com/vakeelm32/hld-implementations/tree/master/anycast
+3. [anycast-just dummy not real](https://github.com/vakeelm32/hld-implementations/tree/master/anycast)
 
-5. 
+5. [Resis Operation (Rank List)](https://github.com/vakeelm32/hld-implementations/tree/master/jedis-demo)
