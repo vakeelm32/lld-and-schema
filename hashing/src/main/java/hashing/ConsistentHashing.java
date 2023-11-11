@@ -69,6 +69,7 @@ public class ConsistentHashing {
         // print the ring,
         // key will sorted as we are using Treemap, value represents the server
         System.out.println("Printing Ring");
+
         ch.ring.keySet().forEach(hash -> {
             System.out.println(hash + "   ->   " + ch.ring.get(hash));
         });
