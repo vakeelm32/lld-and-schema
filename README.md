@@ -6,4 +6,4 @@
 
 3. [anycast-just dummy not real](https://github.com/vakeelm32/hld-implementations/tree/master/anycast)
 
-5. [Resis Operation (Rank List)](https://github.com/vakeelm32/hld-implementations/tree/master/jedis-demo)
+5. [Redis Operation (Rank List)](https://github.com/vakeelm32/hld-implementations/tree/master/jedis-demo)
