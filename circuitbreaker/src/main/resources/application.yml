@@ -1,0 +1,42 @@
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoint:
+    health:
+      show-details: "ALWAYS"
+    retries:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+resilience4j:
+  retry:
+    retry-aspect-order: 1
+    instances:
+      vakeel: # You can give a name to your Retry instance
+        max-attempts: 2
+        wait-duration: 3s
+    metrics:
+      enabled: true
+      legacy:
+        enabled: true
+  circuitbreaker:
+    circuit-breaker-aspect-order: 1
+    metrics:
+      enabled: true
+    configs:
+      default:
+        register-health-indicator: true
+        automatic-transition-from-open-to-half-open-enabled: true
+        failure-rate-threshold: 100
+        minimum-number-of-calls: 3
+        max-wait-duration-in-half-open-state: 30s # allows system in this time from "half-open" to close/open
+        wait-duration-in-open-state: 1m # open to half open
+        permitted-number-of-calls-in-half-open-state: 3
+        sliding-window-size: 10
+        sliding-window-type: COUNT_BASED
+
+        

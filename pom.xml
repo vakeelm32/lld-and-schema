@@ -11,7 +11,8 @@
   <modules>
     <module>consistent-hashing</module>
     <module>connection-pooling</module>
-      <module>anycast</module>
+     <module>anycast</module>
+     <module>circuitbreaker</module>
   </modules>
 
   <name>hld-implementations</name>
